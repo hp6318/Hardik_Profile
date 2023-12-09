@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>project </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img2/favicon.png" rel="icon">
+  <link href="assets/img2/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html#work">Projects</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <!-- <li><a class="nav-link scrollto " href="#work">Work</a></li> -->
+          <!-- <li><a class="nav-link scrollto " href="#blog">Blog</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i> -->
+      <!-- </nav> --> 
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img2/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Object Detection</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Object Detection - PascalVOC Dataset</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img2/obj_det_1.png" alt="">
+                  <li class="breadcrumb-item active"><strong>FasterRCNN-output</strong></li>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img2/obj_det_2.png" alt="">
+                  <li class="breadcrumb-item active"><strong>FasterRCNN-output</strong></li>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img2/obj_det_3.png" alt="">
+                  <li class="breadcrumb-item active"><strong>RetinNET-output</strong></li>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="portfolio-description">
+              <h2>Abstract</h2>
+              <p>
+                This project fine-tunes an object detection model using <a href="https://github.com/facebookresearch/detectron2"><strong>Detectron2</strong></a> 
+                framework. The pre-trained model used is a Faster RCNN model trained on COCO Dataset.  
+              </p>
+              <h2>Dataset</h2>
+              <p>
+                <a href="http://host.robots.ox.ac.uk/pascal/VOC/databases.html"><strong>Pascal VOC</strong></a> Dataset was used.
+                It consists of 20 categories with 2501 training images . There are a total of 7844 instances spread across the 20 classes with 'person' class having 
+                the most instances, 2705 to be precise. 'Bus' has the least instances with a count of 131. The fine-tuned trained model is then evaluated over 2510 images.     
+              </p>
+              
+              <h2>Results</h2>
+              <p>  
+                <img src="assets/img2/obj_det_4.png">
+              </p>
+              <p>
+                1) Faster RCNN took less time for training compared to Retinanet on the same dataset. 
+              </br>
+                2) Retinanet kind of failed to locate many objects when threshold was kept to 0.7 with LR=0.0001
+              </br>
+                3) Faster RCNN outperformed all the settings of Retinanet, achieving AP50 score of 67.1612.
+              </p>
+              </br>
+                <strong>Faster RCNN Results:</strong>
+                <img src="assets/img2/obj_det_5.png">
+                <img src="assets/img2/obj_det_6.png">
+              </br>
+                <strong>RetinaNET Results:</strong>
+                <img src="assets/img2/obj_det_7.png">
+                <img src="assets/img2/obj_det_8.png">
+            </div>  
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Language</strong>: Python</li>
+                <li><strong>Framework</strong>: Detectron2(Pytorch)</li>
+                <li><strong>IDE</strong>: Google Colab</li>
+                <li><strong>Architecture</strong>: Faster RCNN | RetinaNET</li>
+                <li><strong>Project URL</strong>: <a href="https://colab.research.google.com/drive/17fSR6GscZt7H35_PT8I8hss7zS8wv6QV?usp=sharing">Object Detection</a></li>
+              </ul>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Hardik_Prajapati</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
